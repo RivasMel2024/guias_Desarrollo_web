@@ -1,0 +1,83 @@
+body {
+    background-color: #91a18a85;
+}
+
+p {
+    margin: 10px 2.3em 20px;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#encabezado{
+    background: url('../img/tlou1.jpg') center no-repeat;
+    background-size: cover;
+    padding: 5%;
+}
+
+#encabezado h1{
+    color: white;
+    text-align: center;
+}
+
+.intro {
+    background-color: #717f65b6;
+    padding: 2px;
+    margin: 20px;
+}
+
+.advertencia, h2 {
+    color: #5c5c19;
+    text-align: center;
+    font-size: 2em;
+}
+
+#personajes {
+    text-align: center;
+}
+
+#personajes table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#personajes th,
+#personajes td {
+    padding: 10px;
+    border: 1px solid #0c05056a;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+#personajes thead {
+    background-color: #91a18a85 ;
+    color: #5c5c19;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 1s;
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    background-color: #5c5c19;
+    font-size: 25px;
+}

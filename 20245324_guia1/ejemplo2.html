@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando la etiqueta style</title>
+    <style>
+        body{
+            background-color: #E0E0E0;
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+        }
+        div.contenido{
+            margin: 0 auto; 
+            width: 80%;
+        }
+        p{
+            font-size: 18px;
+        }
+        .cuento{
+            color: navy;
+            text-align: justify;
+        }
+
+        .parrafo1{
+            font-family:'Courier New', monospace;
+        }
+        .parrafo2{
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        .parrafo3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /* ¿Qué cambios se produjeron como resultado de la inclusión de la regla de estilo anterior? 
+        Cada parrafo o elemento con dichas clases tendra la fuente que se dio como valor, en el caso de este ejemplo,
+        cada uno de los parrafos (con sus respectivas clases) dentro de la clase cuento tendra diferentes fuentes entre ellas */
+
+        div.autor{
+            font-style: italic;
+        }
+        p.julio{
+            font-size: 14px;
+        }
+        /* ¿A qué elementos del documentos HTML está afectando dichas reglas? 
+        Afecta a todos los div con la clase autor o todos los parrafos con clase julio*/
+    </style>
+</head>
+<body>
+    <h1>Instrucciones para llorar (Julio Cortaza)</h1>
+    <div class="contenido">
+        <p class="cuento parrafo1">Dejando de lado los motivos, atengämonos a la manera correcta de Ilorar, entendiendo por esto un llanto que no ingrese en el escandalo, ni que insulte a la sonrisa con su paralela y torpe semejanza.</p>
+        
+        <p class="cuento parrafo2">El llanto medio u ordinario consiste en una contracciön general del rostro y un sonido espasmödico acompañado de lägrimas y mocos, estos ültimos al final, pues eI Ilanto se acaba en el momento en que uno se suena enérgicamente.</p>
+        
+        <p class="cuento parrafo 3">Para Ilorar, dirija Ia imaginaciön hacia usted mismo, y si esto Ie resulta imposible por haber contraido eI häbito de creer en eI mundo exterior, piense en un pato cubierto de hormigas o en esos golfos del estrecho de Magallanes en los que no entra nadie, nunca. Llegado el Ilanto, se taparå con decoro el rostro usando ambas manos con la palma hacia adentro. Los nihos Ilorarän con la manga del saco contra la cara, y de preferencia en un rincön del cuarto. Duraciön media del Ilanto, tres minutos.</p>
+    </div>
+
+    <div class="autor">
+        <p class="julio">Julio Cortazar (Bruselas, Bélgica, 26 de agosto de 1914-Paris, Francia, 12 de febrero de 1984) fue un escritor, traductor e intelectual argentino nacido en Bélgica.</p>
+        
+        <p class="julio">Se le considera uno de los autores mås innovadores y originales de su tiempo, maestro del relato corto, la prosa poética y la narraciön breve en general, y creador de importantes novelas que inauguraron una nueva forma de hacer literatura en el mundo hispano, rompiendo los moldes cläsicos mediante narraciones que escapan de la linealidad temporal. Debido a que los contenidos de su Obra transitan en la frontera entre Io real y Io fantästico, suele ser puesto en relaciön con el realismo magico e incluso con el surrealismo.</p>
+    </div>
+</body>
+</html>
