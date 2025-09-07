@@ -1,35 +1,98 @@
+/* IMPORTS DE GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #91a18a85;
+    background-color: #232a25; 
+    color: #e0d8c3; 
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 p {
-    margin: 10px 2.3em 20px;
+    margin: 10px 3em 20px;
     font-size: 1.3em;
     text-align: justify;
     line-height: 1.6;
 }
 
-#encabezado{
-    background: url('../img/tlou1.jpg') center no-repeat;
-    background-size: cover;
-    padding: 5%;
+img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 20px auto 15px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #232a25a0;
 }
 
+#encabezado {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(35, 42, 37, 0.646), rgba(35, 42, 37, 0.646)), url('../img/tlou1.jpg') center no-repeat;
+    background-size: cover;
+    padding: 0 5%;
+    border-bottom: 4px solid #5c5c19;
+    box-shadow: 0 4px 16px #232a25a0;
+}
+
+#encabezado nav {
+    margin-top: 20px;
+}
+
+
 #encabezado h1{
-    color: white;
+    color: #e0d8c3;
+    text-shadow: 2px 2px 8px #232a25, 0 0 2px #5c5c19;
     text-align: center;
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-family: "Anton", sans-serif;
+
 }
 
 .intro {
-    background-color: #717f65b6;
-    padding: 2px;
+    padding: 2px 2em;
     margin: 20px;
+    background: rgba(44, 49, 41, 0.7);
+    border-radius: 18px;
+    color: #e0d8c3;
 }
 
-.advertencia, h2 {
-    color: #5c5c19;
+.advertencia{
+    color: #d4af37;
     text-align: center;
     font-size: 2em;
+    background-color: #232a25;
+    border-radius: 25px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 2px 8px #232a25a0;
+    padding: 12px;
+}
+
+h2 {
+    color: #d4af37;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin: 25px;
+}
+
+h3, h4{
+    color: #d4af37;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin: 25px;
 }
 
 #personajes {
@@ -39,19 +102,24 @@ p {
 #personajes table {
     margin: 0 auto;
     border-collapse: collapse;
+    background: rgba(44, 49, 41, 0.8);
+    box-shadow: 0 2px 12px #232a25a0;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 #personajes th,
 #personajes td {
-    padding: 10px;
-    border: 1px solid #0c05056a;
+    padding: 12px;
+    border: 1px solid #5c5c19;
     text-align: left;
     font-size: 1.1em;
+    color: #e0d8c3;
 }
 
 #personajes thead {
-    background-color: #91a18a85 ;
-    color: #5c5c19;
+    background-color: #5c5c19;
+    color: #d4af37;
     font-weight: bold;
 }
 
@@ -59,10 +127,13 @@ footer p{
     font-size: 1.1em;
     text-align: center;
     margin-top: 20px;
-    color: #7f8c8d;
+    color: #d4af37;
+    background: #232a25;
+    padding: 10px 0;
+    border-top: 2px solid #5c5c19;
 }
 
-header nav ul {
+#encabezado nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -70,14 +141,65 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li a{
-    color: white;
+#encabezado nav ul li a{
+    color: #d4af37;
     text-decoration: none;
-    transition: all 1s;
+    transition: all 0.3s;
     font-size: 20px;
+    padding: 6px 18px;
+    border-radius: 8px;
+    background: rgba(44, 49, 41, 0.7);
+    border: 1px solid #5c5c19;
 }
 
-header nav ul li a:hover {
-    background-color: #5c5c19;
-    font-size: 25px;
+#encabezado nav ul li a:hover {
+    background-color: #d4af37;
+    color: #232a25;
+    font-size: 22px;
+    box-shadow: 0 2px 8px #232a25a0;
+}
+
+#imgs{
+    display: flex;
+    justify-content: center;
+}
+
+#imgs img{
+    margin: 5px;
+    width: 25%;
+}
+
+#imgs img:hover{
+    width: 32%;
+    transition: 0.7s;
+}
+
+.protagonistas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #4b5a47;
+    margin: 40px;
+    padding: 0;
+    width: 470px;
+    height: 620px;
+    border-radius: 25px;
+    box-shadow: 15px 20px 15px #3e2f1c99;
+}
+
+.card p{
+    margin: 30px;
+    padding: 10px;
+}
+
+.card img{
+    width: 45%;
+}
+
+.card h4{
+    color: #e0d8c3;
+    text-decoration: underline;
 }
