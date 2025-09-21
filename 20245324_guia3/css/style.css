@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+header {
+    background: #16A085;
+    height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+footer{
+    background: #16A085;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header div, footer div {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+h1{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    /* overflow: hidden; */
+    padding-top: 150px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+main article {
+    font-size: 0.9rem;
+    height: 340px;
+    /* float: left; */
+    margin: 0 0.5%;
+    width: 32.33%;
+    border: 2px dashed #16A085;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+main article img {
+    height: 180px;
+    max-width: 80%;
+    display: block;
+    margin: 5px auto;
+}
+
+main article h3{
+    text-align: center;
+}
+
+footer div{
+    padding-top: 1rem;
+}
+
+main article:nth-child(2){
+    background-color: rgba(70, 130, 180, 0.9);
+    position: relative;
+    left: 100px;
+    top: 50px;
+    /* visibility: hidden; */
+    display: none;
+}
