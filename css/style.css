@@ -254,7 +254,7 @@ header h1 {
 
 /* ESTILOS DE LA SECCION FODA */
 /* Sección FODA */
-.foda {
+#foda {
     background: #fffaf6;
     border-radius: 15px;
     padding: 30px;
@@ -263,7 +263,7 @@ header h1 {
     border-left: 5px solid #B21010 ;
 }
 
-.foda h3 {
+#foda h3 {
     color: #111827;
     font-size: 2em;
     margin-bottom: 25px;
