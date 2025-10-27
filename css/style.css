@@ -1,0 +1,304 @@
+/* ESTILOS GENERALES */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Inter', sans-serif;
+    background-color: #fdf7f1;
+    color: #475569; ;
+}
+
+main{
+    margin: 5%;
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    font-weight: 600;
+}
+
+/* ESTILOS DEL HEADER Y DEL NAVBAR */
+
+header {
+    background: linear-gradient(180deg,rgba(222, 47, 47, 1) 0%, rgba(246, 114, 114, 0.98) 100%);
+    color: white;
+    text-align: center;
+    padding: 36px;
+    
+}
+
+header h1 { 
+    font-size: 50px;
+    margin: 30px;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    transition: all 0.5s ;
+    border-radius: 25px;
+}
+
+#navBar a:hover{
+    background-color: #fdf6f0a7;
+    color: #dc2626;
+}
+
+#navBar li {
+    list-style: none;
+}
+
+#navBar { 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ESTILOS DE LA SECCION SOBRE MI */
+
+.detalles {
+    display: flex;
+    justify-content: space-evenly;
+    color: #475569b9; 
+    margin: 15px ;
+    list-style: none;
+    font-style: normal;
+    text-align: center;
+}
+
+.info{
+    line-height: 1.5;
+    margin-top: 0;
+    margin: 20px;
+}
+
+.info h2{
+    color: #dc2626;
+    font-size: 35px;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg,rgba(246, 114, 114, 0.17) 0%, rgba(247, 10, 10, 1) 52%, rgba(246, 114, 114, 0.17) 100%) 1;
+    font-style: normal;
+    text-align: center;
+}
+
+#sobreMi img{ 
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #B21010;
+    margin: 10px;
+    box-shadow: -1px 15px 50px -19px #DC2626;
+}
+
+#sobreMi { 
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(220, 38, 38, 0.1);
+    border: 2px solid #F3F4F6 ;
+    padding: 20px;
+    border-radius: 30px;
+    font-style: italic;
+}
+
+/* ESITLOS DE LA SECCION DE INFORMACION DEL CURSO */
+
+.detalles-curso li { 
+    border: 2px solid #DC2626;
+    padding: 30px 10px 30px;
+}
+
+.detalles-curso li:hover{
+    transform: translateY(-15px);
+    transition: all 0.5s ease;
+}
+
+.detalles-curso {
+    margin: 30px;
+}
+
+#curso h2 { 
+    padding-left: unset;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg,rgba(246, 114, 114, 0.17) 0%, rgba(247, 10, 10, 1) 52%, rgba(246, 114, 114, 0.17) 100%) 1;
+    color: #111827;
+    font-size: 35px;
+    display: inline;
+}
+
+#curso h3 {
+    color: #dc2626;
+    margin: 30px 0 15px;
+    font-size: 20px;
+}
+
+#curso {
+    background-color: #fffaf6;
+    margin-top: 50px;
+    box-shadow: 0 5px 20px rgba(220, 38, 38, 0.1);
+    padding: 35px;
+    line-height: 1.5;
+    border-left: 8px solid #B21010;
+    border-radius: 30px;
+}
+
+/* SECCION DE ESTILOS DE LAS CARD DE LAS GUIAS */
+
+#guias h2{
+    padding: 30px;
+    color: #111827;
+    font-size: 35px;
+    margin-top: 2em;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg,rgba(246, 114, 114, 0.17) 0%, rgba(247, 10, 10, 1) 52%, rgba(246, 114, 114, 0.17) 100%) 1;
+}
+
+.cards-guias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-evenly;
+    padding: 0 12px;
+    margin: 30px 0 20px;
+}
+
+.cards-guias section {
+    flex: 0 1 calc(50% - 12px);
+    box-sizing: border-box;
+    padding: 35px;
+    background-color: #ffffff;
+    line-height: 2;
+    border-radius: 30px;
+}
+
+.cards-guias section:hover {
+    border: 2px solid #dc2626;
+    box-shadow: -1px 15px 50px -19px #DC2626;
+    transition: all 0.5s ease;
+
+}
+
+.cards-guias section h3 {
+    color: #dc2626;
+    font-size: 28px;
+}
+
+.cards-guias section h4 {
+    font-size: 22px;
+    color: #111827;
+}
+
+.cards-guias ul {
+    margin-left: 20px;
+}
+
+.cards-guias li { 
+    color: inherit;
+}
+
+.cards-guias li::marker { 
+    color: #dc2626;
+}
+
+.contenido-guia {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 12px;
+    margin: 15px;
+    font-weight: 900;
+    margin-left: 0;
+    color: #475569d2;
+    font-size: 13px;
+    border-top: 1px solid #4755695a;
+}
+
+.enlaces a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: #111827;
+    font-weight: 600;
+}
+
+.cards-guias .enlaces{
+    margin: 0;
+}
+
+.enlaces li{
+    background-color: #fffaf6 ;
+    margin: 10px;
+    margin-left: 0;
+    list-style: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.enlaces li:hover {
+    border-left: 5px solid #B21010;
+    background-color: #dc26264d;
+    box-shadow: 0 5px 20px rgba(220, 38, 38, 0.1);
+    transition: all 0.3s ease-in;
+    transform: translatex(15px);
+}
+
+/* ESTILOS DE LA SECCION FODA */
+/* Sección FODA */
+.foda {
+    background: #fffaf6;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 5px solid #B21010 ;
+}
+
+.foda h3 {
+    color: #111827;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg,rgba(246, 114, 114, 0.17) 0%, rgba(247, 10, 10, 1) 52%, rgba(246, 114, 114, 0.17) 100%) 1;
+    padding: 20px;
+}
+
+.foda-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.foda-item {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.foda-item h4 {
+    display: inline;
+    color: #dc2626;
+    font-size: 1.3em;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg,rgba(29, 53, 87, 0.17) 0%, rgba(17, 24, 39, 1) 52%, rgba(29, 53, 87, 0.17) 100%) 1;
+}
+
+.foda-item p {
+    margin-top: 25px;
+    line-height: 1.6;
+    font-size: 0.95em;
+    color: #1D3557;
+}

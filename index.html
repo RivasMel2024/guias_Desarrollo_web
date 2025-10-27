@@ -4,50 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guias - Melisa Rivas</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <h1>Guias practicas</h1>
-        <h2>Melisa Rivas</h2>
+        <h1>Guías prácticas</h1>
+        <nav id="navBar">
+            <li><a href="#sobreMi">Sobre Mi</a></li>
+            <li><a href="#curso">Informacion del curso</a></li>
+            <li><a href="#guias">Guías de Ejercicios</a></li>
+            <li><a href="#foda">Análisis FODA</a></li>
+        </nav>
     </header>
     <main>
-        <section>
-            <h3>Guia 1</h3>
-            <ul>
-                <li><a href="./20245324_guia1/estilos_embebidos.html">Ejemplo 1</a></li>
-                <li><a href="./20245324_guia1/ejemplo2.html">Ejemplo 2</a></li>
-                <li><a href="./20245324_guia1/paises.html">Ejemplo 3</a></li>
-                <li><a href="./20245324_guia1/videojuego.html">Ejercicio 1</a></li>
-            </ul>
-        </section>
 
-        <section>
-            <h3>Guia 2</h3>
-            <ul>
-                <li><a href="20245324_guia2/pelicula.html">Ejemplo Pelicula</a></li>
-                <li><a href="20245324_guia2/tablero.html">Ejemplo Tablero de damas</a></li>
-                <li><a href="20245324_guia2/biografia.html">Ejercicio Biografia</a></li>
-            </ul>
-        </section>
+        <article id="sobreMi">
+            <img src="./imgs/melisa.jpg" alt="Melsa Rivas">
+            <div class="info">
+                <h2>Melisa Rivas</h2>
+                
+                <ul class="detalles">
+                    <li><span>Carnet:</span> 20245324</li>
+                    <li><span>Correo personal:</span> rivasmelisa2024@gmail.com</li>
+                    <li><span>Correo academico:</span> 20245324@esen.edu.sv</li>
+                </ul>
+                
+                <p>Mi nombre completo es Melisa Eugenia Rivas Linares, soy salvadoreña y tengo 20 años. Actualmente, me encuentro estudiando en la Escuela Superior de Economia y Negocios en la carrera de Ingeniería de Software y Negocios Digitales.</p>
+                
+                <p>Tengo experiencia en Desarrollo Web, JavaScript, conocimientos básicos de ReactJs y NodeJs. Con conexión a bases de datos NoSQL con Mongo DB.</p>
+            </div>
 
-        <section>
-            <h3>Guia 3</h3>
-            <ul>
-                <li><a href="20245324_guia3/index.html">Ejemplo Agencia de viajes</a></li>
-                <li><a href="20245324_guia3/analisis.html">Ejemplo Z-index</a></li>
-                <li><a href="20245324_guia3/oscares.html">Ejemplo Posicionamiento</a></li>
-                <li><a href="20245324_guia3/menu_horizontal.html">Ejemplo Menú horizontal</a></li>
-            </ul>
-        </section>
+        </article>
 
-        <section>
-            <h3>Guia 4</h3>
-            <ul>
-                <li><a href="20245324_guia4/index.html">Ejemplo Agencia de viajes</a></li>
-                <li><a href="20245324_guia4/mediaqueries.html">Ejemplo Z-index</a></li>
+        <article id="curso">
+            <h2>Información del curso</h2>
+            <h3>Desarrollo Web I - Ciclo 03/2025</h3>
+            <p><span>Profesor:</span> Guillermo Calderón</p>
+            <ul class="detalles detalles-curso">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
             </ul>
-        </section>
+            <p>Este curso proporciona una base sólida en el desarrollo web moderno, cubriendo desde los fundamentos de HTML semántico hasta técnicas avanzadas de estilizado con CSS3 y programación con JavaScript. A través de ejercicios prácticos y proyectos reales, se desarrollan habilidades esenciales para crear sitios web responsivos, accesibles y visualmente atractivos.</p>
+        </article>
 
+        <article id="guias">
+            <h2>Guías de Ejercicios</h2>
+            <div class="cards-guias">
+                <section>
+                    <h3>Guía 1</h3>
+                    <h4> Introducción a HTML y CSS</h4>
+                    <p>Esta guía introduce los conceptos fundamentales de HTML5 y CSS3, enseñando la estructura básica de documentos web y las diferentes formas de aplicar estilos.</p>
+                    <p class="contenido-guia">CONTENIDOS DE LA GUÍA:</p>
+                    <ul>
+                        <li>Estructura HTML y sintaxis CSS</li>
+                        <li>Métodos para incluir CSS (embebido, interno, externo)</li>
+                        <li>Selectores básicos (universal, etiqueta, clase, ID)</li>
+                        <li>Propiedades de texto y fuentes</li>
+                    </ul>
+
+                    <p class="contenido-guia">ENLACES Y EJEMPLOS:</p>
+                    <ul class="enlaces">
+                        <li><a href="./pages/20245324_guia1/estilos_embebidos.html">Ejemplo 1</a></li>
+                        <li><a href="./pages/20245324_guia1/ejemplo2.html">Ejemplo 2</a></li>
+                        <li><a href="./pages/20245324_guia1/paises.html">Ejemplo 3</a></li>
+                        <li><a href="./pages/20245324_guia1/videojuego.html">Ejercicio 1</a></li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Guía 2 </h3>
+                    <h4>Selectores CSS Avanzados y Modelo de Caja</h4>
+                    <p>Esta guía profundiza en técnicas avanzadas de selección de elementos HTML y explora el modelo de caja de CSS para crear diseños más complejos.</p>
+                    <p class="contenido-guia">Contenidos:</p>
+                    <ul>
+                        <li>Selectores avanzados y combinación de selectores</li>
+                        <li>Pseudo-elementos y pseudo-clases</li>
+                        <li>Modelo de caja (margin, border, padding, content)</li>
+                        <li>Elementos de bloque vs elementos de línea</li>
+                    </ul>
+
+                    <p class="contenido-guia">Enlaces y ejemplos:</p>
+                    <ul class="enlaces">
+                        <li><a href="./pages/20245324_guia2/pelicula.html">Ejemplo Pelicula</a></li>
+                        <li><a href="./pages/20245324_guia2/tablero.html">Ejemplo Tablero de damas</a></li>
+                        <li><a href="./pages/20245324_guia2/biografia.html">Ejercicio Biografia</a></li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Guía 3</h3>
+                    <h4>Posicionamiento, Visualización y Maquetación</h4>
+                    <p>Esta guía enseña las técnicas de posicionamiento CSS y control de visualización para crear layouts complejos y menús de navegación.</p>
+                    
+                    <p class="contenido-guia">Contenidos:</p>
+                    <ul>
+                        <li>Tipos de posicionamiento CSS</li>
+                        <li>Propiedades de visualización (display, visibility, overflow, z-index)</li>
+                        <li>Propiedad float y clear</li>
+                        <li>Diseños fijos y líquidos/fluidos</li>
+                        <li>Creación de menús multinivel</li>
+                    </ul>
+
+                    
+                    <p class="contenido-guia">Enlaces y ejemplos:</p>
+                    <ul class="enlaces">
+                        <li><a href="./pages/20245324_guia3/index.html">Ejemplo Agencia de viajes</a></li>
+                        <li><a href="./pages/20245324_guia3/analisis.html">Ejemplo Z-index</a></li>
+                        <li><a href="./pages/20245324_guia3/oscares.html">Ejemplo Posicionamiento</a></li>
+                        <li><a href="./pages/20245324_guia3/menu_horizontal.html">Ejemplo Menú horizontal</a></li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Guía 4</h3>
+                    <h4>Introducción al Responsive Design</h4>
+                    <p>Esta guía introduce el diseño web responsivo para crear sitios que se adaptan a diferentes dispositivos y tamaños de pantalla.</p>
+                    <p class="contenido-guia">Contenidos:</p>
+                    <ul>
+                        <li>Concepto de Responsive Web Design</li>
+                        <li>Meta tag viewport y diseño fluido</li>
+                        <li>Media queries y breakpoints</li>
+                        <li>Estrategias Mobile First vs Desktop First</li>
+                        <li>Layouts responsivos completos</li>
+                    </ul>
+
+                    <p class="contenido-guia">Enlaces y ejemplos:</p>
+                    <ul class="enlaces">
+                        <li><a href="./pages/20245324_guia4/index.html">Ejemplo Agencia de viajes</a></li>
+                        <li><a href="./pages/20245324_guia4/mediaqueries.html">Ejemplo Z-index</a></li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Guia 5</h3>
+                    <p>Proximamente...</p>
+                </section>
+            </div>
+        </article>
+
+        <section class="foda">
+            <h3>Análisis FODA</h3>
+            <div class="foda-grid">
+                <div class="foda-item ">
+                    <h4>Fortalezas</h4>
+                    <p>Cuento con una alta capacidad de aprendizaje autónomo y he desarrollado habilidades en programación y tecnologías como Node.js, SQL, Socket.io y automatización con n8n. Soy persistente al resolver problemas técnicos, organizada en mis proyectos y tengo buena comunicación escrita, lo cual me permite trabajar de forma clara y efectiva.</p>
+                </div>
+
+                <div class="foda-item ">
+                    <h4>Oportunidades</h4>
+                    <p>Estoy en un campo con amplio crecimiento como lo es la tecnología, lo que me permite seguir desarrollando mis habilidades en backend, automatización y bases de datos. Tengo la posibilidad de crear proyectos reales que fortalezcan mi portafolio profesional y también cuento con habilidades que me pueden llevar a enseñar y liderar en el área tecnológica.</p>
+                </div>
+
+                <div class="foda-item ">
+                    <h4>Debilidades</h4>
+                    <p>En ocasiones dudo de mis capacidades y busco demasiada validación antes de avanzar, lo que puede frenar mi ritmo de trabajo. También tiendo a buscar la perfección antes de mostrar resultados, y a veces me cuesta tomar decisiones rápidas cuando tengo varias opciones técnicas.</p>
+                </div>
+
+                <div class="foda-item ">
+                    <h4>Amenazas</h4>
+                    <p>La carga de proyectos personales, académicos o laborales podría generar estrés o desmotivación si no gestiono bien mi tiempo. Además, la competencia en el área tecnológica es alta, por lo que debo mantenerme en constante actualización para no quedarme atrás. La falta de recursos externos o apoyo financiero también puede limitar el crecimiento de mis proyectos.</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
