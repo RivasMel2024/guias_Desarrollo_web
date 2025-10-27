@@ -302,3 +302,209 @@ header h1 {
     font-size: 0.95em;
     color: #1D3557;
 }
+
+/* ESTILO RESPONSIVO */
+
+/* ESTILO PARA TELEFONOS */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 18px;
+    }
+    header h1 {
+        font-size: 2em;
+        margin: 12px 0;
+    }
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+    }
+    #navBar li {
+        margin: 0;
+    }
+
+    #sobreMi {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+        margin-top: 20px;
+    }
+    #sobreMi img {
+        width: 120px;
+        margin: 8px auto;
+    }
+    .info {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .detalles {
+        flex-direction: column;
+        gap: 6px;
+        font-size: 0.95em;
+    }
+    .info h2 {
+        font-size: 1.3em;
+        padding: 0;
+    }
+        #curso {
+        padding: 14px;
+        margin-top: 18px;
+        border-radius: 18px;
+    }
+    #curso h2 {
+        font-size: 1.2em;
+        padding: 6px;
+    }
+    #curso h3 {
+        font-size: 1em;
+        margin: 12px 0 8px;
+    }
+    .detalles-curso {
+        margin: 10px 0;
+        font-size: 0.95em;
+    }
+    .detalles-curso li {
+        padding: 12px 6px;
+        font-size: 0.95em;
+    }
+        #foda {
+        padding: 12px;
+        margin-top: 18px;
+        border-radius: 10px;
+    }
+    .foda-grid {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .foda-item {
+        min-width: unset;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 0.95em;
+    }
+    .foda-item h4 {
+        font-size: 1em;
+        padding: 6px;
+    }
+    .cards-guias {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0 4px;
+    }
+    .cards-guias section {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 18px;
+        margin: 0;
+    }
+}
+
+/* ESTILO PARA TABLETS */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 24px;
+    }
+    header h1 {
+        font-size: 2.5em;
+        margin: 18px 0;
+    }
+    #navBar {
+        flex-direction: row;
+        gap: 12px;
+        padding: 0 8px;
+    }
+    #navBar li {
+        margin: 0 4px;
+    }
+
+    main {
+        margin: 2%;
+    }
+
+    #sobreMi {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        margin-top: 28px;
+    }
+    #sobreMi img {
+        width: 150px;
+        margin: 10px auto;
+    }
+    .info {
+        margin: 12px 0;
+        text-align: center;
+    }
+    .detalles {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 1em;
+        justify-content: center;
+    }
+    .info h2 {
+        font-size: 1.7em;
+        padding: 0;
+    }
+
+    #curso {
+        padding: 20px;
+        margin-top: 28px;
+        border-radius: 22px;
+    }
+    #curso h2 {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+    #curso h3 {
+        font-size: 1.1em;
+        margin: 18px 0 10px;
+    }
+    .detalles-curso {
+        margin: 16px 0;
+        font-size: 1em;
+    }
+    .detalles-curso li {
+        padding: 18px 8px;
+        font-size: 1em;
+    }
+
+    #foda {
+        padding: 18px;
+        margin-top: 28px;
+        border-radius: 12px;
+    }
+    .foda-grid {
+        flex-direction: row;
+        gap: 14px;
+    }
+    .foda-item {
+        min-width: 180px;
+        padding: 14px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+    .foda-item h4 {
+        font-size: 1.1em;
+        padding: 8px;
+    }
+
+    .cards-guias {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 8px;
+    }
+    .cards-guias section {
+        flex: 0 1 calc(50% - 10px);
+        max-width: 100%;
+        padding: 22px;
+        margin: 0;
+        border-radius: 20px;
+    }
+    .cards-guias section h3 {
+        font-size: 1.3em;
+    }
+    .cards-guias section h4 {
+        font-size: 1.1em;
+    }
+}
