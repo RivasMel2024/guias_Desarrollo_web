@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Expresiones Regulares</title>
+</head>
+<body>
+    <main class="d-flex flex-nowrap">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark nav-bar">
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+                <span class="fs-4">JavaScript</span>
+            </a>
+            <hr />
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="../pages/registroAcademico.html" class="nav-link text-white">
+                        <i class="bi bi-file-spreadsheet" role="img" aria-label="RegistroAcademico"></i>
+                        Registro académico
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/tablasMultiplicar.html" class="nav-link text-white">
+                        <i class="bi bi-person-workspace" role="img" aria-label="TablasMultiplicar"></i>
+                        Tablas de multiplicar
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/promedioNotas.html" class="nav-link text-white">
+                        <i class="bi bi-file-earmark-medical" role="img" aria-label="Promedio"></i>
+                        Promedio notas
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/arreglo.html" class="nav-link text-white">
+                        <i class="bi bi-box" role="img" aria-label="Arreglo"></i>
+                        Arreglo
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../pages/expresionesRegulares.html" class="nav-link text-white active">
+                        <i class="bi bi-code-slash" role="img" aria-label="ExpresionesRegulares"></i>
+                        Expresiones Regulares
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column flex-shrink-0 p-3 colum-container contenedor">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="h-100 p-4 bg-light border rounded-3">
+                            <h3>Registro de Estudiante con Validaciones</h3>
+                            <form id="idFormEstudiante">
+                                <div class="row mb-3">
+                                    <label for="inputCarnet" class="col-sm-3 col-form-label">Carnet:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputCarnet" maxlength="5" 
+                                            placeholder="AB001" required>
+                                        <small class="form-text text-muted">Formato: 2 letras y 3 números (Ejemplo: AB001)</small>
+                                        <div class="invalid-feedback">Formato inválido. Use 2 letras mayúsculas seguidas de 3 números.</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputNombre" class="col-sm-3 col-form-label">Nombre Completo:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputNombre" 
+                                            placeholder="Juan Carlos Pérez" required>
+                                        <small class="form-text text-muted">Solo letras y espacios</small>
+                                        <div class="invalid-feedback">El nombre solo puede contener letras y espacios.</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputDUI" class="col-sm-3 col-form-label">DUI:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputDUI" maxlength="10"
+                                            placeholder="12345678-9" required>
+                                        <small class="form-text text-muted">Formato: ########-#</small>
+                                        <div class="invalid-feedback">Formato inválido. Use: 12345678-9</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputNIT" class="col-sm-3 col-form-label">NIT:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputNIT" maxlength="17"
+                                            placeholder="1234-567890-123-4" required>
+                                        <small class="form-text text-muted">Formato: ####-######-###-#</small>
+                                        <div class="invalid-feedback">Formato inválido. Use: 1234-567890-123-4</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputFechaNacimiento" class="col-sm-3 col-form-label">Fecha de Nacimiento:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputFechaNacimiento" 
+                                            placeholder="DD/MM/AAAA" required>
+                                        <small class="form-text text-muted">Formato: DD/MM/AAAA</small>
+                                        <div class="invalid-feedback">Formato inválido. Use: DD/MM/AAAA (Ejemplo: 15/08/2000)</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputCorreo" class="col-sm-3 col-form-label">Correo Electrónico:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputCorreo" 
+                                            placeholder="ejemplo@correo.com" required>
+                                        <small class="form-text text-muted">Email válido</small>
+                                        <div class="invalid-feedback">Correo electrónico inválido.</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputEdad" class="col-sm-3 col-form-label">Edad:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputEdad" maxlength="3"
+                                            placeholder="18" required>
+                                        <small class="form-text text-muted">Solo números</small>
+                                        <div class="invalid-feedback">Solo se permiten números.</div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn btn-success" id="idBtnAgregarEstudiante">
+                                    <i class="bi bi-person-plus-fill"></i>
+                                    Registrar
+                                </button>
+
+                                <button type="button" class="btn btn-primary" id="idBtnMostrarEstudiante">
+                                    <i class="bi bi-person-lines-fill"></i>
+                                    Mostrar estudiantes
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" id="idBtnLimpiar">
+                                    <i class="bi bi-eraser"></i>
+                                    Limpiar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h3>Estudiantes registrados</h3>
+                        <div id="idContainerEstudiantes" class="bg-light p-3 border rounded">Ninguno</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast para notificaciones -->
+    <div class="toast-container top-0 start-50 translate-middle-x pt-4 mt-1" style="z-index: 1035;">
+        <div id="idNotificacion" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bi bi-bell"></i>
+                <strong class="me-auto">Notificación</strong>
+                <small>Ahora</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="idMensaje"></div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/expresionesRegulares.js"></script>
+</body>
+</html>

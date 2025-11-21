@@ -63,15 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 nombre = arrayEstudiantes[i][1]
                 apellido = arrayEstudiantes[i][2]
 
-                table = 
-                `
-                <tr>
-                    <td scope='row' style='font-weight:bold;'> ${i + 1} </td>
-                    <td>${carnet} </td>
-                    <td>${nombre} </td>
-                    <td>${apellido} </td>
-                </tr>                
-                `
+                table += `<tr>`
+                table += `<td scope='row' style='font-weight:bold;'> ${i + 1} </td>`
+                table += `<td>${carnet} </td>`
+                table += `<td>${nombre} </td>`
+                table += `<td>${apellido} </td>`
+                table += `</tr>`
+                
             }
 
             table += "</tbody>"
